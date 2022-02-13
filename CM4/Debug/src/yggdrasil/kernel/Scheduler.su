@@ -1,0 +1,84 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+Assertion.hpp:4:14:void kernel::stop()	4	static,ignoring_inline_asm
+Task.hpp:131:13:constexpr kernel::Task::Task(uint32_t*, uint32_t, kernel::Task::TaskFunc, uint32_t, uint32_t, bool, const char*)	24	static
+Task.hpp:202:17:static int8_t kernel::Task::sleepCompare(kernel::Task*, kernel::Task*)	16	static
+Task.hpp:224:17:static int8_t kernel::Task::priorityCompare(kernel::Task*, kernel::Task*)	16	static
+Task.hpp:253:15:void kernel::Task::setStackPointer(uint32_t*)	16	static
+IVectorsManager.hpp:40:14:constexpr core::interfaces::Irq::Irq(int16_t)	16	static
+IVectorsManager.hpp:49:14:constexpr core::interfaces::Irq::operator int16_t()	16	static
+core_cm4.h:1679:22:void __NVIC_EnableIRQ(IRQn_Type)	16	static,ignoring_inline_asm
+core_cm4.h:1717:22:void __NVIC_DisableIRQ(IRQn_Type)	16	static,ignoring_inline_asm
+core_cm4.h:1770:22:void __NVIC_ClearPendingIRQ(IRQn_Type)	16	static
+core_cm4.h:1809:22:void __NVIC_SetPriority(IRQn_Type, uint32_t)	16	static
+DynamicVectorManager.hpp:53:47:virtual void implementation::vectors::DynamicVectorManager::registerHandler(core::interfaces::Irq, core::interfaces::IVectorManager::IrqHandler, const char*)	32	static
+DynamicVectorManager.hpp:58:15:virtual void implementation::vectors::DynamicVectorManager::unregisterHandler(core::interfaces::Irq)	24	static
+DynamicVectorManager.hpp:63:19:virtual uint32_t implementation::vectors::DynamicVectorManager::tableBaseAddress()	24	static
+DynamicVectorManager.hpp:74:47:virtual void implementation::vectors::DynamicVectorManager::irqPriority(core::interfaces::Irq, uint8_t, uint8_t)	24	static
+DynamicVectorManager.hpp:93:47:virtual void implementation::vectors::DynamicVectorManager::irqPriority(core::interfaces::Irq, uint8_t)	24	static
+DynamicVectorManager.hpp:126:54:virtual void implementation::vectors::DynamicVectorManager::enableIrq(core::interfaces::Irq)	16	static
+DynamicVectorManager.hpp:132:22:virtual void implementation::vectors::DynamicVectorManager::disableIrq(core::interfaces::Irq)	16	static
+DynamicVectorManager.hpp:137:22:virtual void implementation::vectors::DynamicVectorManager::clearIrq(core::interfaces::Irq)	16	static
+DynamicVectorManager.hpp:143:25:virtual uint8_t implementation::vectors::DynamicVectorManager::lockInterruptsHigherThan(uint8_t)	32	static,ignoring_inline_asm
+DynamicVectorManager.hpp:153:22:virtual void implementation::vectors::DynamicVectorManager::unlockInterruptsHigherThan(uint8_t)	32	static,ignoring_inline_asm
+DynamicVectorManager.hpp:178:22:virtual bool implementation::vectors::DynamicVectorManager::isInstalled()	24	static
+DynamicVectorManager.hpp:183:22:virtual bool implementation::vectors::DynamicVectorManager::installVectorManager()	24	static
+systick.hpp:16:17:virtual void core::drivers::Systick::initSystemTimer(uint32_t, uint32_t)	24	static
+systick.hpp:23:17:virtual void core::drivers::Systick::startSystemTimer()	16	static
+systick.hpp:33:34:virtual core::interfaces::Irq core::drivers::Systick::getIrq()	24	static
+clocks.hpp:62:19:virtual uint32_t core::drivers::Clocks::getSystemCoreFrequency()	16	static
+clocks.hpp:84:17:static core::drivers::Clocks& core::drivers::Clocks::get()	4	static
+Task.hpp:271:14:constexpr kernel::TaskWithStack<StackSize>::TaskWithStack(kernel::Task::TaskFunc, uint32_t, uint32_t, bool, const char*) [with long unsigned int StackSize = 128]	40	static
+Hooks.hpp:12:15:static void kernel::Hooks::onKernelStart()	4	static
+Hooks.hpp:20:15:static void kernel::Hooks::onTaskStart(kernel::Task*)	16	static
+Hooks.hpp:29:15:static void kernel::Hooks::onTaskStartExec(kernel::Task*)	16	static
+Hooks.hpp:36:15:static void kernel::Hooks::onTaskStopExec(kernel::Task*)	16	static
+Hooks.hpp:41:15:static void kernel::Hooks::onTaskClose(kernel::Task*)	16	static
+Hooks.hpp:48:15:static void kernel::Hooks::onTaskReady(kernel::Task*)	16	static
+Hooks.hpp:55:15:static void kernel::Hooks::onTaskSleep(kernel::Task*, uint64_t)	24	static
+Scheduler.cpp:59:7:static void kernel::Scheduler::setupKernel(uint8_t)	16	static
+Scheduler.cpp:65:7:static bool kernel::Scheduler::startKernel()	16	static
+Scheduler.cpp:83:7:static bool kernel::Scheduler::installKernelInterrupt()	8	static
+Scheduler.cpp:108:51:static bool kernel::Scheduler::startFirstTask()	8	static
+Scheduler.cpp:125:14:static bool kernel::Scheduler::irqRegister(core::interfaces::Irq, core::interfaces::IVectorManager::IrqHandler, const char*)	24	static
+Scheduler.cpp:131:14:static bool kernel::Scheduler::irqUnregister(core::interfaces::Irq)	16	static
+Scheduler.cpp:137:14:static void kernel::Scheduler::enterKernelCriticalSection()	8	static
+Scheduler.cpp:147:14:static void kernel::Scheduler::exitKernelCriticalSection()	8	static
+Scheduler.cpp:157:7:static bool kernel::Scheduler::startTask(kernel::Task&)	16	static
+Scheduler.cpp:171:7:static bool kernel::Scheduler::schedule(kernel::Scheduler::changeTaskTrigger)	16	static
+Scheduler.cpp:205:7:static bool kernel::Scheduler::stopTask(kernel::Task&)	16	static
+Scheduler.cpp:219:39:static bool kernel::Scheduler::sleep(uint32_t)	16	static
+Scheduler.cpp:238:7:static void kernel::Scheduler::setPendSv(kernel::Scheduler::changeTaskTrigger)	16	static
+Scheduler.cpp:244:7:static bool kernel::Scheduler::inThreadMode()	8	static
+Scheduler.cpp:249:53:static volatile uint32_t* kernel::Scheduler::taskSwitch(uint32_t*)	16	static
+Scheduler.cpp:274:7:static void kernel::Scheduler::systemTimerTick()	24	static
+Scheduler.cpp:299:7:static void kernel::Scheduler::supervisorCall(kernel::ServiceCall::SvcNumber, uint32_t*)	56	static,ignoring_inline_asm
+Scheduler.cpp:377:11:static uint64_t kernel::Scheduler::getTicks()	4	static
+DualLinkedList.hpp:81:14:constexpr framework::DualLinkNode<UnderLyingType, List>::DualLinkNode() [with UnderLyingType = kernel::Task; List = kernel::StartedList]	16	static
+DualLinkedList.hpp:81:14:constexpr framework::DualLinkNode<UnderLyingType, List>::DualLinkNode() [with UnderLyingType = kernel::Task; List = kernel::ReadyList]	16	static
+DualLinkedList.hpp:81:14:constexpr framework::DualLinkNode<UnderLyingType, List>::DualLinkNode() [with UnderLyingType = kernel::Task; List = kernel::SleepingList]	16	static
+DualLinkedList.hpp:81:14:constexpr framework::DualLinkNode<UnderLyingType, List>::DualLinkNode() [with UnderLyingType = kernel::Task; List = kernel::WaitableList]	16	static
+DualLinkedList.hpp:81:14:constexpr framework::DualLinkNode<UnderLyingType, List>::DualLinkNode() [with UnderLyingType = kernel::Task; List = kernel::EventList]	16	static
+DualLinkedList.hpp:257:9:bool framework::DualLinkedList<UnderLyingType, List>::isEmpty() [with UnderLyingType = kernel::Task; List = kernel::ReadyList]	16	static
+Core.hpp:91:41:static Return core::Core::supervisorCall() [with kernel::ServiceCall::SvcNumber Number = kernel::ServiceCall::SvcNumber::startFirstTask; Return = void]	0	static,ignoring_inline_asm
+DualLinkedList.hpp:287:20:UnderLyingType* framework::DualLinkedList<UnderLyingType, List>::getFirst() [with UnderLyingType = kernel::Task; List = kernel::ReadyList]	24	static
+DualLinkedList.hpp:139:9:void framework::DualLinkedList<UnderLyingType, List>::insert(UnderLyingType*, framework::DualLinkedList<UnderLyingType, List>::Comparator) [with UnderLyingType = kernel::Task; List = kernel::StartedList]	48	static
+DualLinkedList.hpp:139:9:void framework::DualLinkedList<UnderLyingType, List>::insert(UnderLyingType*, framework::DualLinkedList<UnderLyingType, List>::Comparator) [with UnderLyingType = kernel::Task; List = kernel::ReadyList]	48	static
+DualLinkedList.hpp:282:20:UnderLyingType* framework::DualLinkedList<UnderLyingType, List>::peekFirst() [with UnderLyingType = kernel::Task; List = kernel::ReadyList]	16	static
+DualLinkedList.hpp:218:9:bool framework::DualLinkedList<UnderLyingType, List>::remove(UnderLyingType*) [with UnderLyingType = kernel::Task; List = kernel::ReadyList]	24	static
+DualLinkedList.hpp:218:9:bool framework::DualLinkedList<UnderLyingType, List>::remove(UnderLyingType*) [with UnderLyingType = kernel::Task; List = kernel::SleepingList]	24	static
+DualLinkedList.hpp:218:9:bool framework::DualLinkedList<UnderLyingType, List>::remove(UnderLyingType*) [with UnderLyingType = kernel::Task; List = kernel::StartedList]	24	static
+DualLinkedList.hpp:139:9:void framework::DualLinkedList<UnderLyingType, List>::insert(UnderLyingType*, framework::DualLinkedList<UnderLyingType, List>::Comparator) [with UnderLyingType = kernel::Task; List = kernel::SleepingList]	48	static
+DualLinkedList.hpp:257:9:bool framework::DualLinkedList<UnderLyingType, List>::isEmpty() [with UnderLyingType = kernel::Task; List = kernel::SleepingList]	16	static
+DualLinkedList.hpp:282:20:UnderLyingType* framework::DualLinkedList<UnderLyingType, List>::peekFirst() [with UnderLyingType = kernel::Task; List = kernel::SleepingList]	16	static
+DualLinkedList.hpp:287:20:UnderLyingType* framework::DualLinkedList<UnderLyingType, List>::getFirst() [with UnderLyingType = kernel::Task; List = kernel::SleepingList]	24	static
+DualLinkedList.hpp:257:9:bool framework::DualLinkedList<UnderLyingType, List>::isEmpty() [with UnderLyingType = kernel::Task; List = kernel::WaitableList]	16	static
+DualLinkedList.hpp:282:20:UnderLyingType* framework::DualLinkedList<UnderLyingType, List>::peekFirst() [with UnderLyingType = kernel::Task; List = kernel::WaitableList]	16	static
+DualLinkedList.hpp:287:20:UnderLyingType* framework::DualLinkedList<UnderLyingType, List>::getFirst() [with UnderLyingType = kernel::Task; List = kernel::WaitableList]	24	static
+DualLinkedList.hpp:50:9:void framework::DualLinkNode<UnderLyingType, List>::prepend(framework::DualLinkNode<UnderLyingType, List>*) [with UnderLyingType = kernel::Task; List = kernel::StartedList]	16	static
+DualLinkedList.hpp:65:9:void framework::DualLinkNode<UnderLyingType, List>::append(framework::DualLinkNode<UnderLyingType, List>*) [with UnderLyingType = kernel::Task; List = kernel::StartedList]	16	static
+DualLinkedList.hpp:50:9:void framework::DualLinkNode<UnderLyingType, List>::prepend(framework::DualLinkNode<UnderLyingType, List>*) [with UnderLyingType = kernel::Task; List = kernel::ReadyList]	16	static
+DualLinkedList.hpp:65:9:void framework::DualLinkNode<UnderLyingType, List>::append(framework::DualLinkNode<UnderLyingType, List>*) [with UnderLyingType = kernel::Task; List = kernel::ReadyList]	16	static
+DualLinkedList.hpp:50:9:void framework::DualLinkNode<UnderLyingType, List>::prepend(framework::DualLinkNode<UnderLyingType, List>*) [with UnderLyingType = kernel::Task; List = kernel::SleepingList]	16	static
+DualLinkedList.hpp:65:9:void framework::DualLinkNode<UnderLyingType, List>::append(framework::DualLinkNode<UnderLyingType, List>*) [with UnderLyingType = kernel::Task; List = kernel::SleepingList]	16	static
+Scheduler.cpp:381:1:void __static_initialization_and_destruction_0(int, int)	24	static
+Scheduler.cpp:381:1:cpp)	8	static

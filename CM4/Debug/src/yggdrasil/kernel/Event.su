@@ -1,0 +1,38 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+Assertion.hpp:4:14:void kernel::stop()	4	static,ignoring_inline_asm
+Task.hpp:131:13:constexpr kernel::Task::Task(uint32_t*, uint32_t, kernel::Task::TaskFunc, uint32_t, uint32_t, bool, const char*)	24	static
+Task.hpp:202:17:static int8_t kernel::Task::sleepCompare(kernel::Task*, kernel::Task*)	16	static
+Task.hpp:224:17:static int8_t kernel::Task::priorityCompare(kernel::Task*, kernel::Task*)	16	static
+Task.hpp:244:8:void kernel::Task::setReturnValue(int16_t)	24	static
+clocks.hpp:84:17:static core::drivers::Clocks& core::drivers::Clocks::get()	4	static
+Task.hpp:271:14:constexpr kernel::TaskWithStack<StackSize>::TaskWithStack(kernel::Task::TaskFunc, uint32_t, uint32_t, bool, const char*) [with long unsigned int StackSize = 128]	40	static
+Hooks.hpp:48:15:static void kernel::Hooks::onTaskReady(kernel::Task*)	16	static
+Hooks.hpp:62:15:static void kernel::Hooks::onTaskWaitEvent(kernel::Task*, kernel::Event*)	16	static
+Hooks.hpp:67:15:static void kernel::Hooks::onEventTrigger(kernel::Event*)	16	static
+Hooks.hpp:72:15:static void kernel::Hooks::onEventTimeout(kernel::Event*)	16	static
+Event.cpp:37:7:static bool kernel::Event::kernelSignalEvent(kernel::Event*)	24	static
+Event.cpp:62:10:static int16_t kernel::Event::kernelWaitEvent(kernel::Event*, uint32_t)	16	static
+Event.cpp:92:10:int16_t kernel::Event::wait(uint32_t)	16	static
+Event.cpp:98:7:bool kernel::Event::signal()	16	static
+Event.cpp:104:7:bool kernel::Event::someoneWaiting()	16	static
+Event.cpp:112:7:void kernel::Event::reset()	16	static
+Event.cpp:117:7:bool kernel::Event::isAlreadyUp()	16	static
+Event.cpp:122:7:virtual void kernel::Event::stopWait(kernel::Task*)	16	static
+Event.cpp:131:7:virtual void kernel::Event::onTimeout(kernel::Task*)	16	static
+DualLinkedList.hpp:81:14:constexpr framework::DualLinkNode<UnderLyingType, List>::DualLinkNode() [with UnderLyingType = kernel::Task; List = kernel::StartedList]	16	static
+DualLinkedList.hpp:81:14:constexpr framework::DualLinkNode<UnderLyingType, List>::DualLinkNode() [with UnderLyingType = kernel::Task; List = kernel::ReadyList]	16	static
+DualLinkedList.hpp:81:14:constexpr framework::DualLinkNode<UnderLyingType, List>::DualLinkNode() [with UnderLyingType = kernel::Task; List = kernel::SleepingList]	16	static
+DualLinkedList.hpp:81:14:constexpr framework::DualLinkNode<UnderLyingType, List>::DualLinkNode() [with UnderLyingType = kernel::Task; List = kernel::WaitableList]	16	static
+DualLinkedList.hpp:81:14:constexpr framework::DualLinkNode<UnderLyingType, List>::DualLinkNode() [with UnderLyingType = kernel::Task; List = kernel::EventList]	16	static
+DualLinkedList.hpp:139:9:void framework::DualLinkedList<UnderLyingType, List>::insert(UnderLyingType*, framework::DualLinkedList<UnderLyingType, List>::Comparator) [with UnderLyingType = kernel::Task; List = kernel::ReadyList]	48	static
+DualLinkedList.hpp:139:9:void framework::DualLinkedList<UnderLyingType, List>::insert(UnderLyingType*, framework::DualLinkedList<UnderLyingType, List>::Comparator) [with UnderLyingType = kernel::Task; List = kernel::WaitableList]	48	static
+DualLinkedList.hpp:287:20:UnderLyingType* framework::DualLinkedList<UnderLyingType, List>::getFirst() [with UnderLyingType = kernel::Task; List = kernel::ReadyList]	24	static
+DualLinkedList.hpp:218:9:bool framework::DualLinkedList<UnderLyingType, List>::remove(UnderLyingType*) [with UnderLyingType = kernel::Task; List = kernel::WaitableList]	24	static
+Core.hpp:112:39:static Return core::Core::supervisorCall(Param0, Param1) [with kernel::ServiceCall::SvcNumber Number = kernel::ServiceCall::SvcNumber::waitEvent; Return = short int; Param0 = kernel::Event*; Param1 = long unsigned int]	0	static,ignoring_inline_asm
+Core.hpp:101:40:static Return core::Core::supervisorCall(Param0) [with kernel::ServiceCall::SvcNumber Number = kernel::ServiceCall::SvcNumber::signalEvent; Return = bool; Param0 = kernel::Event*]	0	static,ignoring_inline_asm
+DualLinkedList.hpp:50:9:void framework::DualLinkNode<UnderLyingType, List>::prepend(framework::DualLinkNode<UnderLyingType, List>*) [with UnderLyingType = kernel::Task; List = kernel::ReadyList]	16	static
+DualLinkedList.hpp:65:9:void framework::DualLinkNode<UnderLyingType, List>::append(framework::DualLinkNode<UnderLyingType, List>*) [with UnderLyingType = kernel::Task; List = kernel::ReadyList]	16	static
+DualLinkedList.hpp:50:9:void framework::DualLinkNode<UnderLyingType, List>::prepend(framework::DualLinkNode<UnderLyingType, List>*) [with UnderLyingType = kernel::Task; List = kernel::WaitableList]	16	static
+DualLinkedList.hpp:65:9:void framework::DualLinkNode<UnderLyingType, List>::append(framework::DualLinkNode<UnderLyingType, List>*) [with UnderLyingType = kernel::Task; List = kernel::WaitableList]	16	static
+Event.cpp:148:1:void __static_initialization_and_destruction_0(int, int)	24	static
+Event.cpp:148:1:cpp)	8	static

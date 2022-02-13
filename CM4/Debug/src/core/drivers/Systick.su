@@ -1,0 +1,5 @@
+IVectorsManager.hpp:40:14:constexpr core::interfaces::Irq::Irq(int16_t)	16	static
+Systick.hpp:16:17:virtual void core::drivers::Systick::initSystemTimer(uint32_t, uint32_t)	24	static
+Systick.hpp:23:17:virtual void core::drivers::Systick::startSystemTimer()	16	static
+Systick.hpp:28:17:virtual void core::drivers::Systick::stopSystemTimer()	16	static
+Systick.hpp:33:34:virtual core::interfaces::Irq core::drivers::Systick::getIrq()	24	static
